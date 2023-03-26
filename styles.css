@@ -351,6 +351,7 @@ footer:hover{
 .button:hover{
     background-color:black;
     color: red;
+    cursor: pointer;
 }
 
 .subject{
@@ -591,9 +592,13 @@ footer:hover{
     
     .file_label{
         cursor: pointer;
-    }
-    .file_label:hover{
         animation: scale 1s;
+        animation-iteration-count: infinite;
+    }
+
+    .file_label:hover{
+        animation: none;
+        scale: 1.2;
     }
     
     .file_input{
@@ -652,5 +657,6 @@ footer:hover{
     .submit_btn:hover{
         background-color: black;
         color: red;
+        cursor: pointer;
     }
 
