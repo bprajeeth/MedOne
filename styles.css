@@ -500,8 +500,93 @@ footer:hover{
     .pwd{
         min-width: 25vw;
     }
+    .detail_form{
+        gap: 10px;
+        padding: 30px;
+        margin: 20px;
+    }
     
 }
 
 /* styling for form.html */
-
+    .detail_form{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 5px;
+        /* background-image: linear-gradient(rgb(236, 131, 131), #efb3b3); */
+        background-color: rgb(211, 143, 143);
+        padding: 15px;
+        margin: 10px;
+        border-radius: 5px;
+        border: solid;
+    }
+    
+    /* .detail_form input{
+        font-size: large;
+        font-weight: bold;
+    } */
+    .files{
+        grid-column: 1/span 2;
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: solid;
+        border-color: rgb(204, 77, 77);
+        margin: 10px;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.379);
+        backdrop-filter: blur(20px);
+       
+    }
+    
+    .file_label{
+        cursor: pointer;
+    }
+    .file_label:hover{
+        animation: scale 1s;
+    }
+    
+    .file_input{
+        display: none;
+    }
+    
+    .input_tag{
+        height: 6vh;
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.379);
+        border: solid;
+        font-size: large;
+        font-weight: bold;
+        border-color: rgb(204, 77, 77);
+        
+    }
+    
+    .diagnosis{
+        grid-column: span 2;
+        height: 6vh;
+        border-radius: 5px;
+        border: none;
+        background: rgba(255, 255, 255, 0.379);
+        text-align: center;
+        font-size: large;
+        font-weight: bold;
+        border: solid;
+        border-color: rgb(204, 77, 77);
+    }
+    
+    .detailed_desc{
+        grid-column: span 2;
+        height:30vh;
+        border-radius: 5px;
+        border: none;
+        background: rgba(255, 255, 255, 0.379);
+        text-align: center;
+        font-size: large;
+        font-weight: bold;
+        border: solid;
+        border-color: rgb(204, 77, 77);
+    }
