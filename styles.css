@@ -1,0 +1,507 @@
+body{
+    padding: 0;
+    margin: 0 0 15px 0;
+    /* background-image: linear-gradient(rgb(203, 199, 199), white); */
+    
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    height: 25vw;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.262);
+    opacity: 1;
+}
+
+header{
+    top: 0;
+    width: 100%;
+    position: sticky;
+    z-index: 1;
+}
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
+/* .navmenu{
+    z-index: 1;
+    height: 100vh;
+    width: 50%;
+    border: solid;
+    float: right;
+    
+} */
+.add_data
+{
+    border:solid;
+    display: flex;
+    align-items: center;
+    margin: 15px 10px 0 10px;
+    padding:20px;
+    height: 20vw;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.262);
+}
+
+.add_folder:hover, .add_data:hover, .available:hover
+{
+    border-width: 3px;
+    border-color: #4c8bf5;
+    /* background-color: #4c8bf5; */
+}
+
+.add_data:hover .plus
+{
+    z-index: 1;
+    animation: rotate 2s;
+}
+
+.available
+{
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 0;
+    margin: 15px 10px 0 10px;
+    height: 20vw;
+    border-radius: 10px;
+    background-color: rgb(211, 143, 143);
+    border: solid;
+    border-color: rgb(206, 109, 96);
+}
+
+.no_image{
+    height:100%;
+    width: auto;
+    margin-right: 15px;
+    margin-left: 10px;
+    /* border-radius: 10px; */
+}
+
+/* .available:hover{
+    min-height: 30vw ;
+} */
+
+.whole_data{
+    width: 100%;
+    display: flex;
+    
+}
+
+
+.folder
+{
+    padding: 15px;
+    margin: 15px 10px 15px 10px;
+    /* max-height: 143vw; */
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.262);
+    overflow-y:auto;
+}
+
+.news
+{
+    display: none;
+}
+
+.detailpage_news{
+    display: none;
+}
+
+.news_image{
+    display: none;
+}
+
+.data_all
+{
+    padding: 15px;
+    margin: 15px 10px 15px 10px;
+    /* max-height: 143vw; */
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.262);
+    overflow-y:auto;
+}
+
+.add_folder
+{
+    padding: 20px;
+    display: flex;
+    border: solid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 10px 15px 10px;
+    height: 25vw;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.add_folder:hover .plus_folder
+{
+    animation: rotate 2s;
+}
+
+footer
+{
+    display: flex;   
+    justify-content: center;  
+    align-items: center;  
+    padding: 10px; 
+    background-color: aquamarine;
+    border-radius: 100%;
+    height: fit-content;
+    width: fit-content;
+}
+.scan
+{
+    z-index: 1;
+    height: 10vw;
+    width: auto;
+}
+
+footer:hover{
+    animation: scale 0.7s;
+}
+.hamburger{
+    height: 1.5rem;
+    width: auto;
+    position: absolute;
+    right: 0;
+    padding: 20px;
+
+}
+
+.hamburger:hover{
+    animation: scale 0.5s;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2f6fdc;
+}
+
+.modal {
+    display: none; /*Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    border-radius: 5px;
+    box-shadow: 0 0 25px 0 blue;
+    border: solid;
+    border-color: blue;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* this styling applies for both login and signup form. Both are under the same class name login */
+.login{
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    min-width: 80vw;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    z-index: 1;
+    padding: 20px;
+}
+
+.email{
+    min-width:70vw;
+    min-height: 5vh;
+    border-radius: 5px;
+    margin: 20px 0 15px 0;
+    font-size: large;
+    text-align: center;
+    border: none;
+ }
+
+.username{
+    min-width:70vw;
+    min-height: 5vh;
+    border-radius: 5px;
+    margin: 0px 0 15px 0;
+    font-size: large;
+    text-align: center;
+    border: none;
+ }
+
+.pwd{
+    min-width:70vw;
+    min-height: 5vh;
+    border-radius: 5px;
+    margin: 0 0 20px 0;
+    font-size: large;
+    text-align: center;
+    border: none;
+ }
+
+.button{
+    width: 5.5em;
+    height: 2em;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+    background-color: #5849e6;
+    color: white;
+}
+
+.subject{
+    height: 100%;
+    padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .star{
+    margin-left: auto;
+    fill: white;
+    scale: 0.9;
+} */
+
+.star:hover{
+    animation: scale 0.5s;
+}
+
+.star:active{
+    animation: rotate 1s ease-in-out;
+}
+
+.available_text{
+    padding-left: 0;
+    margin:0;
+    font-weight: bold;
+    font-size:medium ;
+}
+
+.modal_image{
+    height: 20vh;
+    width: auto;
+}
+
+.short_desc{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.short_desc p{
+    margin: 0;
+    font-size: larger;
+    font-weight:400;
+}
+
+.short_desc img{
+    margin-bottom: 10px;
+}
+
+@keyframes scale{
+    50%{ transform: scale(1.2);}
+}
+
+ @keyframes rotate{
+    50% {transform: rotate(180deg);}
+ }
+
+
+@media (min-width:400px) {
+    body{
+        overflow: hidden;
+    }
+
+    .add_folder{
+        height:15vh;
+    }
+
+    .news{
+        display: block;
+        padding: 15px;
+        margin: 15px 10px 15px 10px;
+        width: 30%;
+        max-height: 63vh;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.262);
+        overflow-y:auto;
+    }
+
+    .detailpage_news{
+        display: block;
+        padding: 15px;
+        margin: 15px 10px 15px 10px;
+        width: 30%;
+        max-height: 81vh;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.262);
+        overflow-y:auto;
+    }
+
+    .news_image{
+        display: block;
+        width: 100%;
+        background-size: 100%;
+        height: 30%;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    .news_image:hover{
+        box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.482);
+        height: 35%;
+    }
+
+    .title{
+        display: flex;
+        align-items: center;
+        margin-top: auto;
+        border-radius: 5px;
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.395);
+    }
+
+    .title p{
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .folder{
+        width: 70%;
+        max-height: 63vh;
+    }
+
+    .data_all
+    {
+        width: 70%;
+        max-height: 81vh;
+    }
+
+    .available{
+        height: 8rem;
+    }
+    
+    .available_text{
+        padding-left: 0;
+        margin:0;
+        font-weight: bolder;
+        font-size:x-large ;
+    }
+    .available:hover{
+        height: 12rem;
+    }
+
+    .add_data{
+        height: 10vh;
+    }
+    .navbar{
+        height: 12vh;
+    }
+    .scan{
+        height: 7vh;
+    }
+    .login{
+        min-width: 40vw;
+        min-height: 50vh;
+    }
+    .email{
+        min-width: 25vw;
+    }
+    .username{
+        min-width: 25vw;
+    }
+    .pwd{
+        min-width: 25vw;
+    }
+    
+}
+
+/* styling for form.html */
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myNav" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="overlay-content">
+          <a href="login.html">Login/Signup</a>
+          <a href="admin.html">Home</a>
+          <a href="detail_page.html">Library</a>
+        </div>
+      
+    </div>
+
+    <header>
+        <nav>
+            <div class="navbar" id="navbar">
+                <img src="hamburger.png" alt="menu_icon" class="hamburger" id="hamburger" onclick="openNav()">
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        <form>
+            <div>
+            <input type="file">
+            </div>
+            <input type="text" placeholder="Name"/>
+            <input type="text" placeholder="Occupation">
+            <input type="text" placeholder="City">
+            <input type="text" placeholder="Age"/>
+            <select name="gender" id="gender" >
+                <option value="volvo">Male</option>
+                <option value="saab">Female</option>
+                <option value="saab">Other</option>
+            </select>
+            <input type="text" placeholder="Diagnosis" />
+            <input type="text" placeholder="Detailed Description"> 
+        </form>
+    </div>
+    
+</body>
+</html>

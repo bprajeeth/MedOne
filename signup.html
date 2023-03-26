@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    display: flex; 
+    height: 100vh; 
+    justify-content: center; 
+    align-items: center;
+    background-image: linear-gradient(to bottom right,  rgb(225, 83, 83), #2f5ca8);
+  }
+</style>
+<body>
+        
+        <form id="signup" class="login" action="admin.html">
+            <h1 style="color: white;">Create an Account!</h1>
+            <input type="email" id="email" class="email" name="email" placeholder="email" />
+            <input type="text" id="username" class="username" name="username" placeholder="Username" />
+            <input type="password" id="pwd" class="pwd" name="pwd" placeholder="Password" />
+            <input type="submit" value="SignUp" id="submit" class="button" />
+        </form>
+</body>
+</html>
