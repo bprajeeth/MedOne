@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MedOne</title>
 </head>
 <body >
     <!-- style="background-image: linear-gradient(rgb(94, 94, 216),white);" -->
@@ -27,11 +27,13 @@
     <header>
         <nav>
             <div class="navbar" id="navbar">
+                <img src="logo.png" alt="logo" class="logo" onclick="window.location.href='admin.html';" style="cursor:pointer;">
+                <p class="heading">MedOne</p>
                 <img src="hamburger.png" alt="menu_icon" class="hamburger" id="hamburger" onclick="openNav()">
             </div>
         </nav>
     </header>
-    <div class="add_data" id="add_data" onclick="fileupload()" >
+    <div class="add_data" id="add_data" onclick="window.location.href='form.html';" >
         <img src="plus.png" alt="add sign" class="plus" id="plus">
         <p style="font-weight: bold; font-size:x-large; padding-left: 10px;">Add New Data</p>   
     </div>
@@ -49,26 +51,41 @@
             <p style="font-size: xx-large; font-weight: bolder; text-align: center; margin-bottom: 0;">STARRED DATA</p>
             <hr>
             <div id="starred_data">
-            <div class="available" id="a" onclick="modal(id)">
-
+            <div class="available" id="b" onclick="modal(id)">
+                <img src="starred_logo.png" class="no_image" />
+                <div class="subject">
+                <p  class="available_text">Patient: Revi</p>
+                <p  class="available_text">Case: Neuro disorder </p>
+                
+                </div>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" id=${i} class="star" onclick="starred(id)" style="margin-left: auto; fill: yellow; scale: 0.9;" height="40" viewBox="0 96 960 960" width="40"><path d="m263.002 934.458 57.307-246.766L128.85 521.77l252.613-21.922L480 267.158l98.537 232.69L831.15 521.77 639.691 687.692l57.307 246.766L480 803.537 263.002 934.458Z"/></svg>         -->
             </div>
-            <div class="available" id="a" onclick="modal(id)">
-
+            <div class="available" id="b" onclick="modal(id)">
+                <img src="starred_logo.png" class="no_image" />
+                <div class="subject">
+                <p  class="available_text">Patient: Revi</p>
+                <p  class="available_text">Case: Neuro disorder </p>
+                
+                </div>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" id=${i} class="star" onclick="starred(id)" style="margin-left: auto; fill: yellow; scale: 0.9;" height="40" viewBox="0 96 960 960" width="40"><path d="m263.002 934.458 57.307-246.766L128.85 521.77l252.613-21.922L480 267.158l98.537 232.69L831.15 521.77 639.691 687.692l57.307 246.766L480 803.537 263.002 934.458Z"/></svg>         -->
             </div>
-            <div class="available" id="a" onclick="modal(id)">
-
+            <div class="available" id="b" onclick="modal(id)">
+                <img src="starred_logo.png" class="no_image" />
+                <div class="subject">
+                <p  class="available_text">Patient: Revi</p>
+                <p  class="available_text">Case: Neuro disorder </p>
+                
+                </div>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" id=${i} class="star" onclick="starred(id)" style="margin-left: auto; fill: yellow; scale: 0.9;" height="40" viewBox="0 96 960 960" width="40"><path d="m263.002 934.458 57.307-246.766L128.85 521.77l252.613-21.922L480 267.158l98.537 232.69L831.15 521.77 639.691 687.692l57.307 246.766L480 803.537 263.002 934.458Z"/></svg>         -->
             </div>
-            <div class="available" id="a" onclick="modal(id)">
-
-            </div>
-            <div class="available" id="a" onclick="modal(id)">
-
-            </div>
-            <div class="available" id="a" onclick="modal(id)">
-
-            </div>
-            <div class="available" id="a" onclick="modal(id)">
-
+            <div class="available" id="b" onclick="modal(id)">
+                <img src="starred_logo.png" class="no_image" />
+                <div class="subject">
+                <p  class="available_text">Patient: Revi</p>
+                <p  class="available_text">Case: Neuro disorder </p>
+                
+                </div>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" id=${i} class="star" onclick="starred(id)" style="margin-left: auto; fill: yellow; scale: 0.9;" height="40" viewBox="0 96 960 960" width="40"><path d="m263.002 934.458 57.307-246.766L128.85 521.77l252.613-21.922L480 267.158l98.537 232.69L831.15 521.77 639.691 687.692l57.307 246.766L480 803.537 263.002 934.458Z"/></svg>         -->
             </div>
             </div>
             <div id="modal" class="modal" >

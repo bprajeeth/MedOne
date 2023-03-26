@@ -12,6 +12,19 @@ body{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.262);
     opacity: 1;
+    padding-left: 10px;
+}
+
+.logo{
+    height: 100%;
+    width: auto;
+}
+
+.heading{
+    font-size: 3rem;
+    font-weight: bolder;
+    padding-left: 15px;
+    color: white;
 }
 
 header{
@@ -101,6 +114,7 @@ header{
 {
     border-width: 3px;
     border-color: #4c8bf5;
+    cursor: pointer;
     /* background-color: #4c8bf5; */
 }
 
@@ -130,6 +144,7 @@ header{
     margin-left: 10px;
     /* border-radius: 10px; */
 }
+
 
 /* .available:hover{
     min-height: 30vw ;
@@ -227,6 +242,7 @@ footer:hover{
 
 .hamburger:hover{
     animation: scale 0.5s;
+    cursor: pointer;
 }
 
 .heading{
@@ -332,6 +348,10 @@ footer:hover{
     background-color: #5849e6;
     color: white;
 }
+.button:hover{
+    background-color:black;
+    color: red;
+}
 
 .subject{
     height: 100%;
@@ -431,9 +451,11 @@ footer:hover{
         border-radius: 5px;
         margin-bottom: 15px;
     }
+
     .news_image:hover{
         box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.482);
         height: 35%;
+        cursor: pointer;
     }
 
     .title{
@@ -502,16 +524,42 @@ footer:hover{
     }
     .detail_form{
         gap: 10px;
+        width: 60%;
         padding: 30px;
         margin: 20px;
+    }
+    .form_page{
+        display: flex;
+        justify-content: center;
+    }
+
+    .expl{
+        width: 30%;
+    }
+
+    .expl p{
+        font-size: 3rem; color: white; text-align: center;
     }
     
 }
 
 /* styling for form.html */
+    .expl{
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        background-color:#4c8bf5;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 10px;
+        border: solid;
+        font-size: 1.5rem; 
+        color: white; 
+        text-align: center;
+    }
     .detail_form{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 50% 50%;
         gap: 5px;
         /* background-image: linear-gradient(rgb(236, 131, 131), #efb3b3); */
         background-color: rgb(211, 143, 143);
@@ -526,8 +574,8 @@ footer:hover{
         font-weight: bold;
     } */
     .files{
-        grid-column: 1/span 2;
-        height: 25vh;
+        grid-column: span 2;
+        height: 20vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -535,7 +583,7 @@ footer:hover{
         border: solid;
         border-color: rgb(204, 77, 77);
         margin: 10px;
-        border-radius: 5px;
+        border-radius: 25px;
         background: rgba(255, 255, 255, 0.379);
         backdrop-filter: blur(20px);
        
@@ -580,7 +628,7 @@ footer:hover{
     
     .detailed_desc{
         grid-column: span 2;
-        height:30vh;
+        height:25vh;
         border-radius: 5px;
         border: none;
         background: rgba(255, 255, 255, 0.379);
@@ -590,3 +638,19 @@ footer:hover{
         border: solid;
         border-color: rgb(204, 77, 77);
     }
+
+    .submit_btn{
+        height: 3em;
+        width: 10em;
+        background-color: #4c8bf5;
+        color: white;
+        border-radius: 5px;
+        border: none;
+
+    }
+
+    .submit_btn:hover{
+        background-color: black;
+        color: red;
+    }
+

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MedOne</title>
 </head>
 <body style="overflow: auto;">
     <div id="myNav" class="overlay">
@@ -24,13 +24,19 @@
 
     <header>
         <nav>
-            <div class="navbar" id="navbar">
-                <img src="hamburger.png" alt="menu_icon" class="hamburger" id="hamburger" onclick="openNav()">
-            </div>
-        </nav>
+            <nav>
+                <div class="navbar" id="navbar">
+                    <img src="logo.png" alt="logo" class="logo" onclick="window.location.href='admin.html';" style="cursor:pointer;">
+                    <p class="heading">MedOne</p>
+                    <img src="hamburger.png" alt="menu_icon" class="hamburger" id="hamburger" onclick="openNav()">
+                </div>
+            </nav>
     </header> 
-    <div>
-        <form class="detail_form">
+    <div class="form_page">
+        <div class="expl">
+            <p>Fill out the form to add new cases to the repository!</p>
+        </div>
+        <form class="detail_form" action="admin.html">
             <div class="files">
                 
                 
@@ -50,6 +56,9 @@
             </select>
             <input type="text" placeholder="Diagnosis" class="diagnosis"/>
             <input type="text" placeholder="Detailed Description" class="detailed_desc" /> 
+            <div style="grid-column:span 2; display:flex; justify-content:center;">
+                <input type="submit" value="Add data" class="submit_btn" onclick="window.alert('Data Added Successfully')">
+            </div>
         </form>
     </div>
     
