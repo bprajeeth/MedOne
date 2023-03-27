@@ -41,3 +41,10 @@ Check out all the interactive animations and user friendly theme of the website 
 # Login and Signup 📩
 - You can login using existing credentials.
 - If you don't have an existing account you can create a new account.
+
+<br>
+<hr>
+
+Developed by [Prajeeth](https://github.com/bprajeeth "The best developer") 😎 Created with ❤️️
+
+
