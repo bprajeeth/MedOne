@@ -2,6 +2,7 @@ body{
     padding: 0;
     margin: 0 0 15px 0;
     /* background-image: linear-gradient(rgb(203, 199, 199), white); */
+    /* background-image: linear-gradient(to bottom right, rgb(225, 83, 83), #2f5ca8); */
     
 }
 .navbar
@@ -10,9 +11,11 @@ body{
     align-items: center;
     height: 25vw;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.262);
+    padding: 5px 0 0 0;
+    background-color: #b3b1b1;
     opacity: 1;
     padding-left: 10px;
+    border-bottom: solid white;
 }
 
 .logo{
@@ -31,7 +34,6 @@ header{
     top: 0;
     width: 100%;
     position: sticky;
-    z-index: 1;
 }
 
 .overlay {
@@ -103,7 +105,7 @@ header{
     border:solid;
     display: flex;
     align-items: center;
-    margin: 15px 10px 0 10px;
+    margin: 10px 10px 0 10px;
     padding:20px;
     height: 20vw;
     border-radius: 5px;
@@ -184,7 +186,7 @@ header{
 .data_all
 {
     padding: 15px;
-    margin: 15px 10px 15px 10px;
+    margin: 10px 10px 15px 10px;
     /* max-height: 143vw; */
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.262);
@@ -220,6 +222,7 @@ footer
     border-radius: 100%;
     height: fit-content;
     width: fit-content;
+    margin-bottom: 20px;
 }
 .scan
 {
@@ -269,13 +272,13 @@ footer:hover{
   .modal-content {
     background-color: #fefefe;
     border-radius: 5px;
-    box-shadow: 0 0 25px 0 blue;
-    border: solid;
-    border-color: blue;
+    box-shadow: 0 0 50px 0 rgb(94, 178, 174);
+    /* border: solid; */
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    /* border: 1px solid rgb(94, 178, 174); */
+    background-color:rgb(202, 206, 170) ;
+    width: 70%; /* Could be more or less, depending on screen size */
   }
   
   /* The Close Button */
@@ -436,7 +439,7 @@ footer:hover{
     .detailpage_news{
         display: block;
         padding: 15px;
-        margin: 15px 10px 15px 10px;
+        margin: 10px 10px 15px 10px;
         width: 30%;
         max-height: 81vh;
         border-radius: 5px;
@@ -632,6 +635,8 @@ footer:hover{
     }
     
     .detailed_desc{
+        padding-top: 15px;
+        font-family:Arial, Helvetica, sans-serif;
         grid-column: span 2;
         height:25vh;
         border-radius: 5px;
@@ -642,6 +647,7 @@ footer:hover{
         font-weight: bold;
         border: solid;
         border-color: rgb(204, 77, 77);
+        resize: none;
     }
 
     .submit_btn{
