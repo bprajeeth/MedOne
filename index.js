@@ -80,7 +80,7 @@ function starred(id)
 
 
 async function getUser() {
-    const api_url="https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=38da56798e074b0e861c4dad76a61c7a";
+    const api_url="news.json";
     // Making an API call (request)
     // and getting the response back
     const response = await fetch(api_url);
