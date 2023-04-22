@@ -134,9 +134,11 @@ header{
     margin: 15px 10px 0 10px;
     height: 20vw;
     border-radius: 10px;
-    background-color: rgb(211, 143, 143);
+    /* background-color: rgb(211, 143, 143); */
+    background-color: #398aec;
     border: solid;
-    border-color: rgb(206, 109, 96);
+    /* border-color: rgb(206, 109, 96); */
+    border-color: #2f6fdc;
 }
 
 .no_image{
@@ -380,6 +382,7 @@ footer:hover{
 }
 
 .available_text{
+    color: rgb(55, 255, 0);
     padding-left: 0;
     margin:0;
     font-weight: bold;
